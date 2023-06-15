@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="receta" placeholder="receta a borrar" name="receta" required>
+
+<button (click)="getRecetas()"> recetas </button>
+
+<span> {{ recetas | json }} </span>
+
+<button (click)="goToPage('receta')"> Volver </button>

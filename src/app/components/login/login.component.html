@@ -1,0 +1,14 @@
+<input type="text" [(ngModel)]="user" placeholder="username" name="user" required>
+
+<input type="text" [(ngModel)]="psw" placeholder="password" name="psw" required>
+
+<br>
+
+<button (click)="login()"> login </button>
+
+<div class="container">
+    <p>Si no tenes usuario</p>
+    <button (click)="goToPage('signin')">
+        <span>crea uno</span>
+    </button>
+</div>

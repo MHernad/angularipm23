@@ -1,0 +1,15 @@
+<input type="text" [(ngModel)]="receta" placeholder="receta a borrar" name="receta" required>
+
+<input type="text" [(ngModel)]="descripcion" placeholder="descripcion" name="descripcion" required>
+
+<input type="number" [(ngModel)]="cantidad" placeholder="cantidad" name="cantidad" required>
+
+<select name="medida" [(ngModel)]="medida">
+    <option value="LITRO">LITRO</option>
+    <option value="GRAMO">GRAMO</option>
+    <option value="UNIDAD">UNIDAD</option>
+</select>
+
+<button (click)="put()"> PUT </button>
+
+<button (click)="goToPage('receta')"> Volver </button>
